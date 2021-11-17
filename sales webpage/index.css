@@ -1,0 +1,393 @@
+body {
+  background-color: rgb(226, 226, 152);
+}
+hr {
+  border: 2px solid black;
+}
+/* header */
+.banner {
+  display: flex;
+  /* border: 2px solid red; */
+  padding: 10px;
+}
+#logo {
+  border: 8px solid olive;
+  border-radius: 30px;
+}
+.banner-title {
+  /* border: 2px solid red; */
+  padding: 10px;
+  margin: 10px;
+}
+
+/* discount banner */
+.discount-banner {
+  background-color: olive;
+  margin: 10px;
+  padding: 10px;
+}
+
+/* main slideShow */
+body {
+  font-family: Helvetica, sans-serif;
+  padding: 5%;
+  text-align: center;
+  font-size: 50;
+}
+
+/* Styling the area of the slides */
+
+#slideshow {
+  overflow: hidden;
+  height: 800px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/* Style each of the sides
+    with a fixed width and height */
+
+.slide {
+  float: left;
+  height: 800px;
+  width: 100%;
+}
+
+/* Add animation to the slides */
+
+.slide-wrapper {
+  /* Calculate the total width on the
+      basis of number of slides */
+  width: calc(728px * 4);
+
+  /* Specify the animation with the
+      duration and speed */
+  animation: slide 10s ease infinite;
+}
+
+/* Set the background color
+    of each of the slides */
+
+.slide:nth-child(1) {
+  background-image: url('./images/pics/intro_img2.jpg');
+}
+
+.slide:nth-child(2) {
+  background: pink;
+}
+
+.slide:nth-child(3) {
+  background: red;
+}
+
+.slide:nth-child(4) {
+  background: yellow;
+}
+
+/* Define the animation
+    for the slideshow */
+
+@keyframes slide {
+  /* Calculate the margin-left for
+      each of the slides */
+  20% {
+    margin-left: 0px;
+  }
+  40% {
+    margin-left: calc(-728px * 1);
+  }
+  60% {
+    margin-left: calc(-728px * 2);
+  }
+  80% {
+    margin-left: calc(-728px * 3);
+  }
+}
+
+/* 2divs */
+#mother2div {
+  display: flex;
+  margin: 20px;
+  justify-content: space-between;
+}
+#intro-img1 {
+  background-image: url('./images/pics/intro_img1.jpg');
+  background-size: contain;
+  /* background-image: linear-gradient() */
+  width: 48%;
+  height: 400px;
+}
+#intro-img1 p {
+  color: white;
+}
+
+#divNumb2 {
+  background-color: papayawhip;
+  background-size: contain;
+  /* background-image: linear-gradient() */
+  width: 48%;
+  height: 400px;
+}
+#divNumb2 p {
+  color: green;
+  padding: 10px;
+  text-align: left;
+}
+
+/* the three lotions */
+#threeLotionDiv {
+  display: flex;
+}
+.lotion-brand {
+  color: olivedrab;
+}
+.addToCart {
+  background-color: black;
+  color: white;
+}
+
+/* modal stuff and trigger */
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal2 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+/* Modal Content/Box */
+.modal-content2 {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close2 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal3 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+/* Modal Content/Box */
+.modal-content3 {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close3 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close3:hover,
+.close3:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modalMainDiv {
+  display: flex;
+}
+
+.modal4 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+/* Modal Content/Box */
+.modal-content4 {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close4 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close4:hover,
+.close4:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal5 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+/* Modal Content/Box */
+.modal-content5 {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close5 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close5:hover,
+.close5:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+.modal6 {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0, 0, 0); /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+}
+/* Modal Content/Box */
+.modal-content6 {
+  background-color: #fefefe;
+  margin: 15% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 80%; /* Could be more or less, depending on screen size */
+}
+
+/* The Close Button */
+.close6 {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close6:hover,
+.close6:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* footer */
+#footer-flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+#footer-flex > div > h4,
+#footer-flex > div > p,
+#whiteText,
+#nonsense {
+  color: white;
+}
+#black {
+  background-color: black;
+}
+#whiteHR {
+  border: 2px solid white;
+}
+
+.contacts {
+  width: 50px;
+}
+#rightside {
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+  width: 30%;
+}
